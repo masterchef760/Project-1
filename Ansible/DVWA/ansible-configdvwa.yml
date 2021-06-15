@@ -1,0 +1,34 @@
+---
+  - name: Install Stuff
+    hosts: webservers
+    become: true
+    tasks:
+    
+    - name: Install docker.io  (state=present is optional)
+      apt:
+        update_cache: yes
+        name: docker.io
+        state: present
+
+    - name: Install python (state=present is optional)
+      apt:
+        name: python3-pip
+        state: present
+
+    - name: Install docker container (state=present is optional)
+      pip:
+        name: docker
+        state: present
+
+    - name: Download and launch the cyberxsecurity/dvwa container image and launch an instance
+      docker_container: 
+        name: dvwa
+        image: cyberxsecurity/dvwa
+        state: started
+        restart_policy: always
+        published_ports: 80:80
+    
+    - name: Make sure docker service is started when VM restarts
+       systemd:
+         name: docker
+         enabled: yes 
