@@ -73,7 +73,7 @@ Enables docker service on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![alt text](https://github.com/masterchef760/Project-1/blob/b0e6ecd1e2527de60405051a16a02c5952a1807f/Ansible/Images/docker_ps.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
