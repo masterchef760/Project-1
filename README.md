@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![alt text](https://github.com/masterchef760/Project-1/blob/7131bbdd61055fe7d114fc3043a9414417e40834/Diagrams/Full%20Server%20Infrastructure.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat.yml file may be used to install only certain pieces of it, such as Filebeat.
 
